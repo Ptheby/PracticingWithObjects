@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+/*Exercises & Committing to GitHub:
+Set up a new JavaScript file dedicated to practicing with objects.
+Construct an object representing a book, with properties such as title, author, publication year, and genre*/
+
+//2
+
+let book = {
+    title: "Meditations",
+    author: 'Marcus Aurelius',
+    year: 161,
+    genre: 'Philosophy',
+
+};
+
+//Implement functions to add, modify, and delete properties from this book object.
+
+book.pages=410;
+console.log(book.pages);
+
+ delete book.title;
+ console.log(book.title);
+
+ //readding
+ book.title= "Meditations";
+ console.log(book.title);
+ 
+ //modify
+
+ book.title=" Curious George";
+ console.log(book.title);
+
+ //changing title back
+ book.title= "Meditations";
+
+
+//To ensure you've mastered the topic, access and display the book's properties.
+
+console.log(book.author+ ','+ book.genre+','+book.title+','+book.year);
+
+//learned this one below on the interet using a FOR LOOP- but not sure how this works yet
+for(property in book)
+{
+  console.log(book[property] +" ")
+};
+
+
+
+
+
+
+//Once satisfied, commit your JavaScript file to a GitHub repository. This will not only serve as a record but will also allow you to share your progress and findings with peers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
